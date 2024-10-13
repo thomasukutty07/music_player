@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music player</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9bc29d19df.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="music-player">
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+            <img src="images/OIP.jpeg" class="song-img" alt="">
+
+            <h1>The Idol</h1>
+            <p>Yoasobi</p>
+            <div id="timer">00:00 / 00:00</div>
+            
+            <audio id="song">
+                <source  src="audio/WhatsApp Audio 2024-06-20 at 18.38.02_b94eb9fa.mp3" type="audio/mpeg">
+            </audio>
+
+            <input type="range" value="0" id="progress">
+         
+            <div class="controls">
+                <div><i class="fa-solid fa-backward"></i></div>
+                <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrl-icon"></i></i></div>
+                <div><i class="fa-solid fa-forward"></i></i></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
